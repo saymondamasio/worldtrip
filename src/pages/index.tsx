@@ -1,4 +1,5 @@
 import { Divider, Flex, useBreakpointValue } from '@chakra-ui/react'
+import Prismic from '@prismicio/client'
 import type { GetStaticProps, NextPage } from 'next'
 import { Header } from '../components/Header'
 import { Banner } from '../components/Home/Banner'
