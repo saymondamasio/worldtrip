@@ -6,6 +6,7 @@ import { About } from '../../components/Continent/About'
 import { Banner } from '../../components/Continent/Banner'
 import { Cities } from '../../components/Continent/Cities'
 import { Header } from '../../components/Header'
+import { Loading } from '../../components/Loading'
 import { getPrismicClient } from '../../services/prismic'
 
 type City = {
@@ -41,7 +42,7 @@ interface Props {
 export default function Continent({ continentData }: Props) {
   const router = useRouter()
 
-  if (router.isFallback) return <div>Loading</div>
+  if (router.isFallback) return <Loading />
 
   return (
     <Flex direction="column" pb="10">
