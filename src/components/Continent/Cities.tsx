@@ -32,13 +32,14 @@ export function Cities({ cities }: Props) {
             mx="auto"
             w="256px"
           >
-            <Image src={city.thumbnail} alt={city.name} />
+            <Image h="170px" src={city.thumbnail} alt={city.name} />
 
             <Flex
               justify="space-between"
-              h={100}
               px="6"
               py="5"
+              flex="1"
+              align="center"
               borderColor="yellow.900"
               borderBottomWidth={1}
               borderLeftWidth={1}
